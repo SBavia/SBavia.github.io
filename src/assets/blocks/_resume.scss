@@ -1,0 +1,105 @@
+.resume {
+    padding-top: 120px;
+    &__wrapper {
+        padding: 60px 90px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -7px;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background: $main-color;
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    background-color: black;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            height: 1px;
+            width: 41px;
+            position: absolute;
+            background-color: black;
+            top: 65px;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            h4 {
+                margin-bottom: 0;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 700;
+            }
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            ul {
+                list-style-type: disc;
+                li {
+                    position: relative;
+                    color: black;
+                    &:after {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 47px;
+            left: 41px;
+            @include before_circle;
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+        &-location {
+            margin-top: 5px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
