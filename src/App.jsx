@@ -122,9 +122,6 @@ const App = () => {
             <a href="#about" className="promo__link">
               About
             </a>
-            <a href="test" className="promo__link">
-              Test
-            </a>
           </div>
         </div>
       </section>
@@ -460,8 +457,8 @@ const App = () => {
             >
               <img src="/img/works/pulse.jpg" alt="pulse" />
             </a>
-            <a href="#" className="portfolio__item">
-              <img src="/img/works/bread.jpg" alt="bread" />
+            <a href="notes" className="portfolio__item">
+              <img src="/img/works/notes.jpg" alt="notes" />
             </a>
             <a href="#" className="portfolio__item vertical">
               <img src="/img/works/plans.jpg" alt="plans" />
